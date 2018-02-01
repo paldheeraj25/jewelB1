@@ -1,0 +1,59 @@
+page-product {
+
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      //text-align: right;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 25%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #FFF;
+      opacity: 0.8;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      top: 33%;
+      position: absolute;
+      width: 100%;
+      color: #FFF;
+      opacity: 0.8;
+    }
+
+  }
+
+  .product-info {
+    //background-color: #fccfab;
+    background-color: #781113;
+
+    border: #9f561c solid .5px;
+    ion-card-header{
+      color: #FFFFFF;
+      font-family: fantasy;
+    }
+    ion-card-content{
+      color: #FFFFFF;
+      font-family: cursive;
+    }
+  }
+
+  .theme-text{
+    color: #9f561c;
+      font-family: cursive;
+  }
+  .recommend{
+    background-color: #fccfab;
+  }
+
+  .toolbar-title-md{
+    padding: 0px 0px;
+  }
+
+  
+}

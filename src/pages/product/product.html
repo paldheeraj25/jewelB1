@@ -1,0 +1,109 @@
+<ion-content>
+
+  <ion-card class="card-background-page">
+    <img [src]="imageUrl" />
+    <ion-grid>
+      <ion-row justify-content-end>
+        <ion-col class="card-title" text-right>{{jewel?.name}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="card-subtitle" text-right col-11>Embrace the beauty</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <ion-card class="product-info">
+    <ion-card-header>
+      <ion-grid>
+        <ion-row class="card-heading">
+          <ion-col text-center>
+            CMR
+          </ion-col>
+          <ion-col text-center>
+            Jewelers
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+    <ion-card-content>
+      <span> SIMPLICITY . ELEGANCE . VIVACIOUS </span>
+      <br> {{jewel?.description}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row justify-content-end>
+      <ion-col text-center>
+        <button ion-button small color="theme-dark" (click)="showEstimate()">Estimate</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button small color="theme-dark" (click)="showSell()">Sell</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item class='barcodeGenerate' text-center>
+    <ngx-barcode [bc-value]="barcode" [bc-display-value]="true"></ngx-barcode>
+  </ion-item>
+  <ion-card>
+    <ion-list class="recommendation">
+      <button ion-item>
+        <span class="theme-text">Available in store</span>
+        <span class="theme-text" item-end>2</span>
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-list class="recommendation">
+      <button ion-item>
+        <span class="theme-text">Available out store</span>
+        <span class="theme-text" item-end>12</span>
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-list class="recommendation">
+      <button ion-item>
+        <span class="theme-text">Recommendations</span>
+        <span class="theme-text" item-end>{{jewel?.tap}}</span>
+      </button>
+    </ion-list>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row justify-content-end>
+      <ion-col text-center>
+        <button ion-button small color="theme-dark" (click)="showEstimate()">Similar product</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button small color="theme-dark" (click)="goToShop()">Shop More</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--<ion-card>
+    <ion-card-header>
+      From Tag
+    </ion-card-header>
+    <ion-card-content>
+      <p>key : {{key}}</p><br>
+      <p>uid : {{uid}}</p>
+      <p>flagTamper : {{flagTamper}}</p>
+      <p>timeStampTag : {{timeStampTag}}</p>
+      <p>rolling code : {{rollingCodeTag}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      From Server
+    </ion-card-header>
+    <ion-card-content>
+      <p>uid: {{uidServer}}</p>
+      <p>flagTamper : {{flagTamperServer}}</p>
+      <p>timeStampTag : {{timeStampTagServer}}</p>
+      <p>rolling code : {{rollingCodeServer}}</p>
+    </ion-card-content>
+  </ion-card>-->
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-footer>
